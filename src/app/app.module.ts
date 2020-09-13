@@ -2,10 +2,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import { AlertManagerComponent } from './alert-manager/alert-manager.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AlertManagerComponent
   ],
   imports: [
     BrowserModule
