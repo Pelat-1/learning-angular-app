@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DetailsComponent implements OnInit {
   displayParagraph = false;
+  log: number[] = [];
 
   constructor() { }
 
@@ -14,6 +15,7 @@ export class DetailsComponent implements OnInit {
   }
 
   toggleDisplay(): void {
+    this.log.push(Date.now());
     this.displayParagraph = !this.displayParagraph;
   }
 }
