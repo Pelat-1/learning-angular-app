@@ -1,6 +1,6 @@
 <button
   class="btn btn-primary"
-  (click)="toggleDisplay()">Display Details</button>
+  (click)="toggleDisplay()">{{ !displayParagraph ? 'Display Details' : 'Hide Details' }}</button>
 <p *ngIf="displayParagraph">Secret Password = tuna</p>
 <div>
   <p
