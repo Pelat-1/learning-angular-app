@@ -1,2 +1,4 @@
-<button class="btn btn-primary">Display Details</button>
-<p>Secret Password = tuna</p>
+<button
+  class="btn btn-primary"
+  (click)="toggleDisplay()">Display Details</button>
+<p *ngIf="displayParagraph">Secret Password = tuna</p>
