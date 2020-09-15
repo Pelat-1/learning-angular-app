@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./set-username.component.css']
 })
 export class SetUsernameComponent implements OnInit {
-  username: string;
+  username: string = '';
 
   constructor() { }
 
