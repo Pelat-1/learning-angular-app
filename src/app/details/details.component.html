@@ -5,7 +5,8 @@
 <div>
   <p
     *ngFor="let logElement of log"
-    [ngStyle]="{backgroundColor: logElement >= fifthLog ? 'blue' : 'transparent'}">
+    [ngStyle]="{backgroundColor: logElement >= fifthLog ? 'blue' : 'transparent'}"
+    [ngClass]="{'white-text': logElement >= fifthLog}">
     {{ logElement }}
   </p>
 </div>
