@@ -13,4 +13,7 @@ export class SetUsernameComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  resetUsername(): void {
+    this.username = '';
+  }
 }
