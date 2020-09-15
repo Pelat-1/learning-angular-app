@@ -4,5 +4,8 @@
 <p *ngIf="displayParagraph">Secret Password = tuna</p>
 <div>
   <p
-    *ngFor="let logElement of log">{{ logElement }}</p>
+    *ngFor="let logElement of log"
+    [ngStyle]="{backgroundColor: logElement >= fifthLog ? 'blue' : 'transparent'}">
+    {{ logElement }}
+  </p>
 </div>
