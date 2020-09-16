@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DatePipe } from '@angular/common';
 
 @Component({
   selector: 'app-details',
@@ -9,7 +10,7 @@ export class DetailsComponent implements OnInit {
   displayParagraph = false;
   log: Date[] = [];
 
-  constructor() { }
+  constructor(private datePipe: DatePipe) { }
 
   ngOnInit(): void {
   }
@@ -17,5 +18,9 @@ export class DetailsComponent implements OnInit {
   toggleDisplay(): void {
     this.log.push(new Date());
     this.displayParagraph = !this.displayParagraph;
+  }
+
+  parseDate(logElement: Date): string {
+    return this.datePipe.transform(logElement, 'yyyy/MM/dd hh:mm:ss');
   }
 }
