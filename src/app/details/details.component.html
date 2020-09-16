@@ -7,6 +7,6 @@
     *ngFor="let logElement of log; let i = index"
     [ngStyle]="{backgroundColor: i > 3 ? 'blue' : 'transparent'}"
     [ngClass]="{'white-text': i > 3}">
-    {{ parseDate(logElement) }}
+    {{ logElement | date: 'dd/MM/yyyy hh:mm' }}
   </p>
 </div>

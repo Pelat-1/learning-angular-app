@@ -19,8 +19,4 @@ export class DetailsComponent implements OnInit {
     this.log.push(new Date());
     this.displayParagraph = !this.displayParagraph;
   }
-
-  parseDate(logElement: Date): string {
-    return this.datePipe.transform(logElement, 'yyyy/MM/dd hh:mm:ss');
-  }
 }
